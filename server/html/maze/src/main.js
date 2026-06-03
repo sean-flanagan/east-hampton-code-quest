@@ -194,6 +194,39 @@ const map = [
   [0, 0, 0, 0, 0, 0, 0, 0]],
 ][BlocklyGames.LEVEL - 1];
 
+// East Hampton remix pass: add small beach-path side trails to each
+// original route so Village Path does not play exactly like stock Maze.
+// The main solution corridor stays intact; extra open tiles read as local
+// side streets, dune cut-throughs, and pond edges.
+(function remixVillagePathMap() {
+  const candidates = [];
+  for (let y = 1; y < map.length - 1; y++) {
+    for (let x = 1; x < map[y].length - 1; x++) {
+      if (map[y][x] !== SquareType.WALL) {
+        continue;
+      }
+      let openNeighbours = 0;
+      for (const delta of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
+        const value = map[y + delta[1]][x + delta[0]];
+        if (value === SquareType.OPEN || value === SquareType.START ||
+            value === SquareType.FINISH) {
+          openNeighbours++;
+        }
+      }
+      if (openNeighbours === 1) {
+        candidates.push([x, y]);
+      }
+    }
+  }
+  const level = BlocklyGames.LEVEL;
+  const branchCount = Math.min(2, candidates.length);
+  for (let i = 0; i < branchCount; i++) {
+    const index = (level * 7 + i * 3) % candidates.length;
+    const branch = candidates[index];
+    map[branch[1]][branch[0]] = SquareType.OPEN;
+  }
+})();
+
 /**
  * Measure maze dimensions and set sizes.
  * ROWS: Number of tiles down.

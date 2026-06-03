@@ -1,39 +1,39 @@
 {
   "Games.name": {
     "desc": "The project name.",
-    "msg": "Blockly Games"
+    "msg": "East Hampton Code Quest"
   },
   "Games.puzzle": {
     "desc": "title - Specifies that this is Blockly's '''Puzzle''' game.  Use the word for a jigsaw puzzle.\n{{Identical|Puzzle}}",
-    "msg": "Puzzle"
+    "msg": "Harbor Puzzle"
   },
   "Games.maze": {
     "desc": "title - Specifies that this is Blockly's '''Maze''' game.\n{{Identical|Maze}}",
-    "msg": "Maze"
+    "msg": "Village Path"
   },
   "Games.bird": {
     "desc": "title - Specifies that this is Blockly's '''Bird''' game.\n{{Identical|Bird}}",
-    "msg": "Bird"
+    "msg": "Dune Bird"
   },
   "Games.turtle": {
     "desc": "title - Specifies that this is Blockly's '''Turtle''' game.\n{{Identical|Turtle}}",
-    "msg": "Turtle"
+    "msg": "Windmill Art"
   },
   "Games.movie": {
     "desc": "title - Specifies that this is Blockly's '''Movie''' game.\n{{Identical|Movie}}",
-    "msg": "Movie"
+    "msg": "Sunset Movie"
   },
   "Games.music": {
     "desc": "title - Specifies that this is Blockly's '''Music''' game.\n{{Identical|Music}}",
-    "msg": "Music"
+    "msg": "Ocean Music"
   },
   "Games.pondTutor": {
     "desc": "title - Specifies that this is Blockly's '''Pond Tutor''' game.  It is a series of lessons or practice levels to allow users to play the more advanced '''Pond''' game (in your language: '''{{:Blockly:Games.pond/{{RelevantLanguage}}}}''').",
-    "msg": "Pond Tutor"
+    "msg": "Harbor Bot Tutor"
   },
   "Games.pond": {
     "desc": "title - Specifies that this is Blockly's '''Pond''' game.",
-    "msg": "Pond"
+    "msg": "Harbor Bot"
   },
   "Games.linesOfCode1": {
     "desc": "alert - Displayed when a level is complete.",
@@ -161,7 +161,7 @@
   },
   "Index.subTitle": {
     "desc": "Brief description of Blockly Games.",
-    "msg": "Games for tomorrow's programmers."
+    "msg": "Learn code through beach, village, harbor, and dune missions inspired by East Hampton."
   },
   "Index.moreInfo": {
     "desc": "Link to a description of Blockly Games, intended for parents and teachers.",
@@ -357,7 +357,7 @@
   },
   "Maze.helpStack": {
     "desc": "callout - The word words for 'stack' and 'blocks' should be the same as for stacking children's blocks. Use the imperative verb form appropriate for speaking to a child, gender unspecified.  If no gender-neutral singular/familiar form exists but a gender-neutral plural/formal form exists, use that instead.  Be sure to use the same translation of 'move forward' as above.",
-    "msg": "Stack a couple of 'move forward' blocks together to help me reach the goal."
+    "msg": "Stack a couple of 'move forward' blocks together to guide the traveler from East Hampton Village toward the beach."
   },
   "Maze.helpOneTopBlock": {
     "desc": "callout - This is displayed if a user attempts to run a program composed of multiple stacks of blocks, letting them know they need to create a single stack.",
@@ -365,15 +365,15 @@
   },
   "Maze.helpRun": {
     "desc": "callout - This is shown after the user has created a program on the first level.",
-    "msg": "Run your program to see what happens."
+    "msg": "Run your program to start the Village Path mission."
   },
   "Maze.helpReset": {
     "desc": "callout - This is shown after the user has run a program that does not solve the maze.",
-    "msg": "Your program didn't solve the maze. Press 'Reset' and try again."
+    "msg": "That route ran into dunes or pond edge. Press 'Reset' and try another path."
   },
   "Maze.helpRepeat": {
     "desc": "callout - This is shown when the 'repeat' block is introduced.  The word 'path' refers to a path through a maze, and 'block' refers to a child's building block.",
-    "msg": "Reach the end of this path using only two blocks. Use 'repeat' to run a block more than once."
+    "msg": "Reach the beach path using only two blocks. Use 'repeat' to run a block more than once."
   },
   "Maze.helpCapacity": {
     "desc": "callout - This is shown after the user has used all the blocks permitted on this level.",

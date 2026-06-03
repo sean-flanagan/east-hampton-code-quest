@@ -1,0 +1,8 @@
+#!/bin/bash
+set -euo pipefail
+url="${@: -1}"
+if [[ " $* " == *" -N "* ]]; then
+  exec curl -L -o "$(basename "$url")" "$url"
+else
+  exec curl -L -O "$url"
+fi

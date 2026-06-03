@@ -28,6 +28,11 @@ ${BlocklyGames.html.headerBar(ij, BlocklyGames.getMsg('Games.maze', true),
     BlocklyInterface.nextLevelParam, true, false,
     '<button id="pegmanButton"><img src="common/1x1.gif"><span id="pegmanButtonArrow"></span></button>')}
 
+<div id="missionCard">
+  <strong>Mission ${ij.level}: Village Path</strong>
+  <span>Use Blockly commands to travel from East Hampton Village toward the beach. Sand dunes and ponds are walls; open paths are safe routes.</span>
+</div>
+
 <div id="visualization">
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="svgMaze" width="400px" height="400px">
     <g id="look">

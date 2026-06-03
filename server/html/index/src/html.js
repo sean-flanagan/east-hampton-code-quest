@@ -23,10 +23,15 @@ goog.require('BlocklyGames');
 Index.html.start = function(ij) {
   return `
 <div id="header">
-  <img id="banner" src="index/title.svg" height=40 width=244 alt="Blockly Games">
+  <div id="banner" aria-label="East Hampton Code Quest">
+    <span class="banner-icon">🌊</span>
+    <span class="banner-title">East Hampton Code Quest</span>
+    <span class="banner-icon">☀️</span>
+  </div>
   <div id="subtitle">${BlocklyGames.getMsg('Index.subTitle', true)}&nbsp;
     <a href="about${ij.html ? '.html' : ''}?lang=${ij.lang}">${BlocklyGames.getMsg('Index.moreInfo', true)}</a>
   </div>
+  <div id="missionIntro">Start with <strong>Village Path</strong>: code your way from Main Street toward the beach.</div>
 </div>
 <svg height="100%" width="100%" version="1.1"
     xmlns="http://www.w3.org/2000/svg"

@@ -1,0 +1,6 @@
+#!/bin/bash
+set -euo pipefail
+if [[ "${1:-}" == "-jar" ]]; then
+  shift 2
+fi
+exec npx google-closure-compiler "$@"
