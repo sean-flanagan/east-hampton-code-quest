@@ -1,0 +1,15 @@
+{
+  "name": "east-hampton-code-quest",
+  "version": "0.1.0",
+  "private": true,
+  "description": "East Hampton-themed Blockly Games remix for local coding missions.",
+  "scripts": {
+    "build": "PATH=\"$PWD/.hermes-shims:$PATH\" make deps && PATH=\"$PWD/.hermes-shims:$PATH\" make games",
+    "start": "serve server/html -l ${PORT:-3000}",
+    "dev": "python3 -m http.server 8010 --directory server/html"
+  },
+  "dependencies": {
+    "google-closure-compiler": "latest",
+    "serve": "latest"
+  }
+}
