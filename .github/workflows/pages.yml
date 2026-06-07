@@ -26,11 +26,21 @@ jobs:
         with:
           node-version: 22
 
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
       - name: Install dependencies
         run: npm install
 
       - name: Build static site
-        run: npm run build
+        run: |
+          # On GitHub's Linux runner, use the real JVM for Closure Compiler.
+          # The repo-local java shim is for Macs that don't have Java installed.
+          rm -f .hermes-shims/java
+          npm run build
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
