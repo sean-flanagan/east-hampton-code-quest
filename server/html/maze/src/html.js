@@ -24,16 +24,16 @@ goog.require('BlocklyInterface');
  */
 Maze.html.start = function(ij) {
   const missions = [
-    ['Main Street Warm-up', 'Stack two forward steps past the storefronts.'],
-    ['Village Green Corner', 'Turn from Main Street toward the green.'],
-    ['Long Wharf Walk', 'Use repeat to follow the straight wharf path.'],
-    ['Dune Boardwalk Bend', 'Zig-zag through a beach-access boardwalk.'],
-    ['Hook Pond Dogleg', 'Cross the causeway and turn up by Hook Pond.'],
-    ['Library Loop', 'Find the tucked-away path inside a village loop.'],
-    ['Farm Lane Detours', 'Ignore tempting side lanes and keep the route smart.'],
-    ['Springs Preserve Trail', 'Use conditionals around preserve paths.'],
-    ['Beach Parking Maze', 'Navigate side streets with wall-following logic.'],
-    ['Montauk Lighthouse Challenge', 'Finish the dense trail network by the lighthouse.'],
+    ['Main Street Stroll', 'Stack forward steps past the village storefronts.'],
+    ['Newtown Lane Turn', 'Head east, then turn south toward the village green.'],
+    ['Village Flagpole Climb', 'Use repeat to climb straight north up the green.'],
+    ['Hook Mill Zig-zag', 'Repeat a right-stair pattern beside the windmill.'],
+    ['Guild Hall Square', 'Follow two blocks, then make the left-turn corner.'],
+    ['Library Loop', 'Use a condition to duck into the reading-garden turn.'],
+    ['Village Shop Alleys', 'Pick the useful right-side shop lane, not the side spurs.'],
+    ['Mulford Farm Lane', 'Use conditionals around village fences and farm lanes.'],
+    ['Herrick Park Side Streets', 'Choose between branch and straightaway with if/else.'],
+    ['Village-to-Ocean Challenge', 'Finish the dense Main Street network to the beach sign.'],
   ];
   const mission = missions[ij.level - 1] || missions[0];
   return `

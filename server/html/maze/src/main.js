@@ -97,94 +97,95 @@ const SquareType = {
 // The maze square constants defined above are inlined here
 // for ease of reading and writing the static mazes.
 const map = [
-// Level 1: Main Street warm-up — two storefront blocks east.
- [[0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0],
-  [0, 1, 2, 1, 3, 1, 0],
-  [0, 0, 0, 1, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0]],
-// Level 2: Village green corner — east, then north by the green.
+// Level 1: Main Street stroll — four storefront blocks east.
  [[0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 1, 1, 0, 0, 0],
-  [0, 0, 0, 1, 3, 0, 0, 0],
-  [0, 0, 2, 1, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 2, 1, 1, 1, 3, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0]],
+// Level 2: Newtown Lane turn — head east, then turn south toward the green.
+ [[0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 2, 1, 1, 0, 0, 0, 0],
+  [0, 0, 0, 1, 0, 0, 0, 0],
+  [0, 0, 0, 3, 0, 0, 0, 0],
   [0, 0, 0, 1, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 3: Long Wharf walk — a longer straight route for repeat.
- [[0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
-  [1, 2, 1, 1, 1, 1, 3, 1],
-  [0, 0, 0, 0, 1, 0, 0, 0],
+// Level 3: Village flagpole climb — repeat straight north up the green.
+ [[0, 0, 0, 3, 0, 0, 0, 0],
+  [0, 0, 0, 1, 0, 0, 0, 0],
+  [0, 0, 0, 1, 0, 0, 0, 0],
+  [0, 0, 0, 1, 0, 0, 0, 0],
+  [0, 0, 0, 1, 0, 0, 0, 0],
+  [0, 0, 0, 2, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 4: Dune boardwalk bend — diagonal-ish beach access path.
- [[0, 0, 0, 0, 0, 0, 0, 1],
-  [0, 0, 0, 0, 0, 0, 1, 1],
-  [0, 0, 0, 0, 0, 3, 1, 0],
+// Level 4: Hook Mill zig-zag — repeat a right-stair step past the windmill.
+ [[0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 2, 1, 0, 0, 0, 0, 0],
+  [0, 0, 1, 1, 0, 0, 0, 0],
+  [0, 0, 0, 1, 1, 0, 0, 0],
   [0, 0, 0, 0, 1, 1, 0, 0],
-  [0, 0, 1, 1, 1, 0, 0, 0],
-  [0, 0, 1, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 3, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0]],
+// Level 5: Guild Hall square — follow two blocks, then a left-turn corner.
+ [[0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 1, 1, 1, 0, 0, 0, 0],
+  [0, 1, 0, 1, 0, 0, 0, 0],
+  [0, 1, 1, 3, 0, 0, 0, 0],
+  [0, 0, 0, 1, 0, 0, 0, 0],
   [0, 2, 1, 1, 0, 0, 0, 0],
-  [1, 1, 0, 0, 0, 0, 0, 0]],
-// Level 5: Hook Pond dogleg — turn up after crossing the causeway.
- [[0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 1, 3, 1, 0],
-  [0, 0, 0, 0, 1, 0, 0, 0],
-  [0, 0, 0, 0, 1, 0, 0, 0],
-  [0, 0, 0, 0, 1, 1, 0, 0],
-  [0, 0, 0, 0, 0, 1, 0, 0],
-  [0, 0, 2, 1, 1, 1, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 6: Library loop — a small loop with the goal tucked inside.
+// Level 6: Library loop — use a condition to duck into the reading-garden turn.
  [[0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 1, 1, 1, 1, 1, 1, 0],
-  [0, 1, 0, 0, 0, 0, 1, 0],
-  [0, 1, 1, 3, 1, 0, 1, 0],
-  [0, 0, 0, 0, 1, 0, 1, 0],
-  [0, 2, 1, 1, 1, 1, 1, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 7: Farm lane detours — choose the useful lane, skip the farm spurs.
- [[0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 1, 1, 0],
+  [0, 1, 1, 1, 1, 3, 0, 0],
+  [0, 1, 0, 0, 1, 1, 0, 0],
+  [0, 1, 0, 0, 0, 1, 0, 0],
+  [0, 1, 1, 1, 0, 1, 0, 0],
+  [0, 0, 0, 1, 0, 1, 0, 0],
   [0, 2, 1, 1, 1, 1, 0, 0],
-  [0, 0, 1, 0, 0, 1, 1, 0],
-  [0, 1, 1, 3, 0, 1, 0, 0],
-  [0, 1, 0, 1, 0, 1, 0, 0],
-  [0, 1, 1, 1, 1, 1, 1, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 8: Springs trail — loops around preserve paths toward the nest sign.
+// Level 7: Village shop alleys — the useful branch is the right-side shop lane.
  [[0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 1, 1, 1, 1, 1, 0, 0],
+  [0, 1, 1, 1, 1, 3, 0, 0],
+  [0, 1, 0, 0, 1, 1, 0, 0],
   [0, 1, 0, 0, 0, 1, 1, 0],
   [0, 1, 1, 1, 0, 0, 1, 0],
   [0, 0, 0, 1, 1, 1, 1, 0],
-  [0, 2, 1, 1, 0, 3, 1, 0],
+  [0, 2, 1, 1, 0, 1, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 9: Beach parking maze — side streets and a left-wall strategy.
+// Level 8: Mulford Farm lane — conditional turns around village fences.
  [[0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 1, 1, 1, 1, 1, 1, 0],
-  [0, 0, 1, 0, 0, 0, 1, 0],
-  [3, 1, 1, 1, 1, 1, 1, 0],
-  [0, 1, 0, 1, 0, 1, 1, 0],
-  [1, 1, 1, 1, 1, 0, 1, 0],
-  [0, 1, 0, 1, 0, 2, 1, 0],
+  [0, 1, 1, 1, 1, 1, 3, 0],
+  [0, 1, 0, 0, 0, 0, 1, 0],
+  [0, 1, 1, 1, 1, 0, 1, 0],
+  [0, 0, 0, 0, 1, 1, 1, 0],
+  [0, 1, 1, 0, 0, 0, 1, 0],
+  [0, 2, 1, 1, 1, 1, 1, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 10: Montauk lighthouse challenge — a denser preserve network.
+// Level 9: Herrick Park side streets — choose between branch and straightaway.
  [[0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 1, 1, 0, 3, 1, 1, 0],
-  [0, 1, 0, 0, 1, 0, 1, 0],
-  [0, 1, 1, 1, 1, 1, 1, 0],
-  [0, 0, 0, 1, 0, 1, 0, 0],
-  [0, 1, 1, 1, 1, 1, 1, 0],
-  [0, 2, 1, 0, 1, 0, 1, 0],
+  [0, 1, 1, 1, 1, 1, 3, 0],
+  [0, 1, 0, 1, 0, 0, 1, 0],
+  [0, 1, 0, 1, 1, 1, 1, 0],
+  [0, 1, 1, 1, 0, 1, 0, 0],
+  [0, 0, 0, 1, 0, 1, 1, 0],
+  [0, 2, 1, 1, 1, 1, 1, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0]],
+// Level 10: Village-to-ocean challenge — a dense Main Street network to the beach sign.
+ [[0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 1, 1, 1, 0, 3, 1, 0],
+  [0, 1, 0, 1, 0, 1, 0, 0],
+  [0, 1, 0, 1, 1, 1, 1, 0],
+  [0, 1, 1, 1, 0, 0, 1, 0],
+  [0, 0, 1, 0, 1, 1, 1, 0],
+  [0, 2, 1, 1, 1, 0, 1, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
 ][BlocklyGames.LEVEL - 1];
 
@@ -236,7 +237,19 @@ let result = ResultType.UNSET;
 /**
  * Starting direction.
  */
-let startDirection = DirectionType.EAST;
+const START_DIRECTIONS = [
+  DirectionType.EAST,
+  DirectionType.EAST,
+  DirectionType.NORTH,
+  DirectionType.EAST,
+  DirectionType.EAST,
+  DirectionType.EAST,
+  DirectionType.EAST,
+  DirectionType.EAST,
+  DirectionType.EAST,
+  DirectionType.EAST,
+];
+let startDirection = START_DIRECTIONS[BlocklyGames.LEVEL - 1] || DirectionType.EAST;
 
 /**
  * PIDs of animation tasks currently executing.
@@ -373,6 +386,8 @@ function drawMap() {
     }
   }
 
+  drawVillageDecorations(svg);
+
   // Add finish marker.
   const finishMarker = Blockly.utils.dom.createSvgElement('image', {
       'id': 'finish',
@@ -401,6 +416,150 @@ function drawMap() {
     }, svg);
   pegmanIcon.setAttributeNS(Blockly.utils.dom.XLINK_NS, 'xlink:href',
       SKIN.sprite);
+}
+
+
+/**
+ * Add East Hampton Village landmarks in the quiet spaces beside each path.
+ * These are intentionally source-drawn SVG decorations so the yellow maze
+ * route remains readable while the empty border squares feel local.
+ * @param {!Element} svg Root SVG element.
+ */
+function drawVillageDecorations(svg) {
+  const labelStyle = 'font: 8px sans-serif; font-weight: 700; letter-spacing: .4px';
+  const g = Blockly.utils.dom.createSvgElement('g', {
+      'id': 'villageDecor',
+      'aria-label': 'East Hampton Village decorations'
+    }, svg);
+
+  const addLabel = function(text, x, y, fill) {
+    const label = Blockly.utils.dom.createSvgElement('text', {
+        'x': x,
+        'y': y,
+        'fill': fill || '#31515f',
+        'style': labelStyle,
+        'text-anchor': 'middle'
+      }, g);
+    label.textContent = text;
+    return label;
+  };
+  const addTree = function(x, y, scale) {
+    Blockly.utils.dom.createSvgElement('rect', {
+        'x': x + 17 * scale, 'y': y + 26 * scale,
+        'width': 5 * scale, 'height': 17 * scale, 'fill': '#7b5732'
+      }, g);
+    Blockly.utils.dom.createSvgElement('circle', {
+        'cx': x + 19 * scale, 'cy': y + 22 * scale,
+        'r': 16 * scale, 'fill': '#4d8f5a', 'stroke': '#2f6740', 'stroke-width': 1
+      }, g);
+  };
+  const addWindmill = function(x, y) {
+    Blockly.utils.dom.createSvgElement('polygon', {
+        'points': `${x + 14},${y + 42} ${x + 24},${y + 12} ${x + 34},${y + 42}`,
+        'fill': '#fff7df', 'stroke': '#8f7650', 'stroke-width': 2
+      }, g);
+    Blockly.utils.dom.createSvgElement('rect', {
+        'x': x + 18, 'y': y + 28, 'width': 10, 'height': 14,
+        'fill': '#b98954'
+      }, g);
+    Blockly.utils.dom.createSvgElement('line', {
+        'x1': x + 24, 'y1': y + 24, 'x2': x + 24, 'y2': y + 3,
+        'stroke': '#785d3b', 'stroke-width': 3
+      }, g);
+    Blockly.utils.dom.createSvgElement('line', {
+        'x1': x + 24, 'y1': y + 24, 'x2': x + 43, 'y2': y + 24,
+        'stroke': '#785d3b', 'stroke-width': 3
+      }, g);
+    Blockly.utils.dom.createSvgElement('line', {
+        'x1': x + 24, 'y1': y + 24, 'x2': x + 7, 'y2': y + 11,
+        'stroke': '#785d3b', 'stroke-width': 3
+      }, g);
+    Blockly.utils.dom.createSvgElement('line', {
+        'x1': x + 24, 'y1': y + 24, 'x2': x + 11, 'y2': y + 40,
+        'stroke': '#785d3b', 'stroke-width': 3
+      }, g);
+    addLabel('HOOK MILL', x + 25, y + 50, '#6f5636');
+  };
+  const addShop = function(x, y, name, color) {
+    Blockly.utils.dom.createSvgElement('rect', {
+        'x': x + 5, 'y': y + 18, 'width': 39, 'height': 25,
+        'rx': 3, 'fill': '#fffaf0', 'stroke': '#9aa6a6', 'stroke-width': 1
+      }, g);
+    Blockly.utils.dom.createSvgElement('rect', {
+        'x': x + 5, 'y': y + 13, 'width': 39, 'height': 9,
+        'fill': color
+      }, g);
+    Blockly.utils.dom.createSvgElement('rect', {
+        'x': x + 22, 'y': y + 30, 'width': 9, 'height': 13,
+        'fill': '#6e97b7'
+      }, g);
+    addLabel(name, x + 25, y + 51, color);
+  };
+  const addMarquee = function(x, y) {
+    Blockly.utils.dom.createSvgElement('rect', {
+        'x': x + 3, 'y': y + 16, 'width': 44, 'height': 23,
+        'rx': 3, 'fill': '#f8efe2', 'stroke': '#694c3b', 'stroke-width': 2
+      }, g);
+    Blockly.utils.dom.createSvgElement('rect', {
+        'x': x + 7, 'y': y + 20, 'width': 36, 'height': 9,
+        'fill': '#1f4259'
+      }, g);
+    addLabel('GUILD', x + 25, y + 28, '#ffd36b');
+    addLabel('HALL', x + 25, y + 50, '#694c3b');
+  };
+  const addBeachSign = function(x, y) {
+    Blockly.utils.dom.createSvgElement('rect', {
+        'x': x + 22, 'y': y + 19, 'width': 4, 'height': 29,
+        'fill': '#8b643e'
+      }, g);
+    Blockly.utils.dom.createSvgElement('rect', {
+        'x': x + 5, 'y': y + 12, 'width': 40, 'height': 17,
+        'rx': 3, 'fill': '#f7e59a', 'stroke': '#8b643e', 'stroke-width': 1
+      }, g);
+    addLabel('TO BEACH', x + 25, y + 24, '#30506a');
+  };
+
+  const level = BlocklyGames.LEVEL;
+  if (level === 1) {
+    addShop(8, 10, 'MAIN ST', '#2d85a8');
+    addTree(300, 210, 1);
+  } else if (level === 2) {
+    addTree(245, 90, 1.15);
+    addLabel('VILLAGE GREEN', 285, 80, '#47753a');
+  } else if (level === 3) {
+    addTree(65, 60, 1);
+    addLabel('FLAGPOLE', 315, 48, '#31515f');
+    Blockly.utils.dom.createSvgElement('line', {
+        'x1': 316, 'y1': 55, 'x2': 316, 'y2': 110,
+        'stroke': '#6b6b6b', 'stroke-width': 3
+      }, g);
+    Blockly.utils.dom.createSvgElement('path', {
+        'd': 'M316 56 L346 65 L316 74 Z', 'fill': '#d84a4a'
+      }, g);
+  } else if (level === 4) {
+    addWindmill(255, 45);
+  } else if (level === 5) {
+    addMarquee(242, 64);
+  } else if (level === 6) {
+    addShop(255, 250, 'LIBRARY', '#7e60a8');
+    addTree(52, 72, .95);
+  } else if (level === 7) {
+    addShop(260, 60, 'SHOPS', '#d36b37');
+    addShop(32, 250, 'CAFE', '#2e8b72');
+  } else if (level === 8) {
+    addTree(270, 98, 1.05);
+    addLabel('MULFORD FARM', 285, 82, '#6b563a');
+    Blockly.utils.dom.createSvgElement('rect', {
+        'x': 252, 'y': 100, 'width': 48, 'height': 22,
+        'fill': '#b87945', 'stroke': '#6b563a', 'stroke-width': 2
+      }, g);
+  } else if (level === 9) {
+    addTree(262, 80, 1.2);
+    addLabel('HERRICK PARK', 292, 68, '#47753a');
+  } else if (level === 10) {
+    addBeachSign(252, 54);
+    addWindmill(20, 42);
+  }
 }
 
 /**

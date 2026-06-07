@@ -1,6 +1,6 @@
 {
 	"@metadata": {
-		"lastupdated": "2026-06-07 14:44:54.067737",
+		"lastupdated": "2026-06-07 14:59:30.883821",
 		"locale": "en",
 		"messagedocumentation": "qqq"
 	},
@@ -103,7 +103,7 @@
 	"Maze.helpSkins": "Choose your favourite player from this menu.",
 	"Maze.helpIf": "An 'if' block will do something only if the condition is true. Try turning left if there is a path to the left.",
 	"Maze.helpMenu": "Click on %1 in the 'if' block to change its condition.",
-	"Maze.helpWallFollow": "Can you solve this Montauk lighthouse trail? Try following the left-hand wall. Advanced coders only!",
+	"Maze.helpWallFollow": "Can you solve this Village-to-Ocean path? Try following the left-hand wall from Main Street toward the beach sign. Advanced coders only!",
 	"Bird.noWorm": "does not have worm",
 	"Bird.heading": "heading",
 	"Bird.noWormTooltip": "The condition when the bird has not gotten the worm.",

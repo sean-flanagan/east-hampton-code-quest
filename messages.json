@@ -397,7 +397,7 @@
   },
   "Maze.helpWallFollow": {
     "desc": "callout - This advises the user to solve a maze by keeping his/her left hand in contact with the wall while proceeding through it.  The final sentence is a warning that only advanced programmers should attempt this problem, as beginners tend to get frustrated.",
-    "msg": "Can you solve this Montauk lighthouse trail? Try following the left-hand wall. Advanced coders only!"
+    "msg": "Can you solve this Village-to-Ocean path? Try following the left-hand wall from Main Street toward the beach sign. Advanced coders only!"
   },
   "Bird.noWorm": {
     "desc": "block text - Bird is not in possession of a worm.  This phrase is prefixed with 'if'.",
