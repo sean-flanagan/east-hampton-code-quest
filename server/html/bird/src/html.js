@@ -22,8 +22,26 @@ goog.require('BlocklyGames.html');
  * @returns {string} HTML.
  */
 Bird.html.start = function(ij) {
+  const missions = [
+    ['Hatchling Hop', 'Aim from beach grass to the protected nest.'],
+    ['Harbor Breeze', 'Bank around a dock rail after finding food.'],
+    ['Dune Crossover', 'Use your position to clear the dune fence.'],
+    ['Pond Diagonal', 'Set one clean heading across Hook Pond.'],
+    ['South Fork Crosswind', 'Mirror the diagonal flight in a stiff ocean breeze.'],
+    ['Clam Shell Pickup', 'Collect food, then bank back toward the nest.'],
+    ['Two Jetties', 'Thread the bird between harbor barriers.'],
+    ['Protected Dunes', 'Combine x and y clues over fenced beach paths.'],
+    ['Migration Channel', 'Dodge diagonal wind lines on the shore route.'],
+    ['Lighthouse Loop', 'Plan the final protected-shore flight.'],
+  ];
+  const mission = missions[ij.level - 1] || missions[0];
   return `
 ${BlocklyGames.html.headerBar(ij, BlocklyGames.getMsg('Games.bird', true), '', true, false, '')}
+
+<div id="missionCard">
+  <strong>Mission ${ij.level}: ${mission[0]}</strong>
+  <span>${mission[1]} Angles are headings on a beach map: 0 east, 90 north, 180 west, 270 south.</span>
+</div>
 
 <div id="visualization">
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="svgBird" width="400px" height="400px">

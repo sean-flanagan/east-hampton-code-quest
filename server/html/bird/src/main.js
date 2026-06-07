@@ -123,100 +123,100 @@ class Line {
 }
 
 const MAP = [
-  // Level 1.
+  // Level 1. Hatchling hop: beach grass to nest.
   {
-    start: new Blockly.utils.Coordinate(20, 20),
-    startAngle: 90,
-    worm: new Blockly.utils.Coordinate(50, 50),
-    nest: new Blockly.utils.Coordinate(80, 80),
+    start: new Blockly.utils.Coordinate(15, 20),
+    startAngle: 45,
+    worm: new Blockly.utils.Coordinate(45, 50),
+    nest: new Blockly.utils.Coordinate(75, 80),
     walls: [],
   },
-  // Level 2.
-  {
-    start: new Blockly.utils.Coordinate(20, 20),
-    startAngle: 0,
-    worm: new Blockly.utils.Coordinate(80, 20),
-    nest: new Blockly.utils.Coordinate(80, 80),
-    walls: [new Line(0, 50, 60, 50)],
-  },
-  // Level 3.
-  {
-    start: new Blockly.utils.Coordinate(20, 70),
-    startAngle: 270,
-    worm: new Blockly.utils.Coordinate(50, 20),
-    nest: new Blockly.utils.Coordinate(80, 70),
-    walls: [new Line(50, 50, 50, 100)],
-  },
-  // Level 4.
-  {
-    start: new Blockly.utils.Coordinate(20, 80),
-    startAngle: 0,
-    worm: null,
-    nest: new Blockly.utils.Coordinate(80, 20),
-    walls: [new Line(0, 0, 65, 65)],
-  },
-  // Level 5.
-  {
-    start: new Blockly.utils.Coordinate(80, 80),
-    startAngle: 270,
-    worm: null,
-    nest: new Blockly.utils.Coordinate(20, 20),
-    walls: [new Line(0, 100, 65, 35)],
-  },
-  // Level 6.
-  {
-    start: new Blockly.utils.Coordinate(20, 40),
-    startAngle: 0,
-    worm: new Blockly.utils.Coordinate(80, 20),
-    nest: new Blockly.utils.Coordinate(20, 80),
-    walls: [new Line(0, 59, 50, 59)],
-  },
-  // Level 7.
-  {
-    start: new Blockly.utils.Coordinate(80, 80),
-    startAngle: 180,
-    worm: new Blockly.utils.Coordinate(80, 20),
-    nest: new Blockly.utils.Coordinate(20, 20),
-    walls: [
-      new Line(0, 70, 40, 70),
-      new Line(70, 50, 100, 50),
-    ],
-  },
-  // Level 8.
+  // Level 2. Harbor breeze: fly around the dock rail.
   {
     start: new Blockly.utils.Coordinate(20, 25),
-    startAngle: 90,
-    worm: new Blockly.utils.Coordinate(80, 25),
-    nest: new Blockly.utils.Coordinate(80, 75),
-    walls: [
-      new Line(50, 0, 50, 25),
-      new Line(75, 50, 100, 50),
-      new Line(50, 100, 50, 75),
-      new Line(0, 50, 25, 50),
-    ],
+    startAngle: 0,
+    worm: new Blockly.utils.Coordinate(75, 30),
+    nest: new Blockly.utils.Coordinate(75, 82),
+    walls: [new Line(0, 55, 58, 55)],
   },
-  // Level 9.
+  // Level 3. Dune crossover: use y-position to clear the fence.
   {
-    start: new Blockly.utils.Coordinate(80, 70),
+    start: new Blockly.utils.Coordinate(25, 75),
+    startAngle: 270,
+    worm: new Blockly.utils.Coordinate(55, 18),
+    nest: new Blockly.utils.Coordinate(85, 72),
+    walls: [new Line(58, 45, 58, 100)],
+  },
+  // Level 4. Pond diagonal: no worm, just angle home.
+  {
+    start: new Blockly.utils.Coordinate(18, 82),
+    startAngle: 0,
+    worm: null,
+    nest: new Blockly.utils.Coordinate(82, 25),
+    walls: [new Line(0, 10, 62, 70)],
+  },
+  // Level 5. South Fork crosswind: mirror the diagonal problem.
+  {
+    start: new Blockly.utils.Coordinate(82, 82),
+    startAngle: 270,
+    worm: null,
+    nest: new Blockly.utils.Coordinate(18, 22),
+    walls: [new Line(100, 95, 35, 34)],
+  },
+  // Level 6. Clam shell pickup: get food, then bank back to the nest.
+  {
+    start: new Blockly.utils.Coordinate(18, 38),
+    startAngle: 0,
+    worm: new Blockly.utils.Coordinate(82, 22),
+    nest: new Blockly.utils.Coordinate(22, 82),
+    walls: [new Line(0, 62, 52, 62)],
+  },
+  // Level 7. Two jetties: thread between harbor barriers.
+  {
+    start: new Blockly.utils.Coordinate(82, 78),
     startAngle: 180,
-    worm: new Blockly.utils.Coordinate(20, 20),
-    nest: new Blockly.utils.Coordinate(80, 20),
+    worm: new Blockly.utils.Coordinate(82, 24),
+    nest: new Blockly.utils.Coordinate(18, 24),
     walls: [
-      new Line(0, 69, 31, 100),
-      new Line(40, 50, 71, 0),
-      new Line(80, 50, 100, 50),
+      new Line(0, 68, 42, 68),
+      new Line(68, 48, 100, 48),
     ],
   },
-  // Level 10.
+  // Level 8. Four protected dunes: decide with x and y.
   {
-    start: new Blockly.utils.Coordinate(20, 20),
+    start: new Blockly.utils.Coordinate(18, 28),
     startAngle: 90,
-    worm: new Blockly.utils.Coordinate(80, 50),
-    nest: new Blockly.utils.Coordinate(20, 20),
+    worm: new Blockly.utils.Coordinate(82, 28),
+    nest: new Blockly.utils.Coordinate(82, 78),
     walls: [
-      new Line(40, 60, 60, 60),
-      new Line(40, 60, 60, 30),
-      new Line(60, 30, 100, 30),
+      new Line(48, 0, 48, 30),
+      new Line(73, 48, 100, 48),
+      new Line(48, 100, 48, 72),
+      new Line(0, 48, 28, 48),
+    ],
+  },
+  // Level 9. Migration channel: dodge diagonal wind lines.
+  {
+    start: new Blockly.utils.Coordinate(82, 72),
+    startAngle: 180,
+    worm: new Blockly.utils.Coordinate(18, 24),
+    nest: new Blockly.utils.Coordinate(82, 24),
+    walls: [
+      new Line(0, 72, 34, 100),
+      new Line(38, 52, 72, 0),
+      new Line(80, 52, 100, 52),
+    ],
+  },
+  // Level 10. Lighthouse loop: final protected-shore flight plan.
+  {
+    start: new Blockly.utils.Coordinate(22, 22),
+    startAngle: 90,
+    worm: new Blockly.utils.Coordinate(78, 52),
+    nest: new Blockly.utils.Coordinate(22, 22),
+    walls: [
+      new Line(38, 62, 62, 62),
+      new Line(38, 62, 62, 28),
+      new Line(62, 28, 100, 28),
     ],
   }
 ][BlocklyGames.LEVEL - 1];

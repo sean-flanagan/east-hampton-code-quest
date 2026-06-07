@@ -23,14 +23,27 @@ goog.require('BlocklyInterface');
  * @returns {string} HTML.
  */
 Maze.html.start = function(ij) {
+  const missions = [
+    ['Main Street Warm-up', 'Stack two forward steps past the storefronts.'],
+    ['Village Green Corner', 'Turn from Main Street toward the green.'],
+    ['Long Wharf Walk', 'Use repeat to follow the straight wharf path.'],
+    ['Dune Boardwalk Bend', 'Zig-zag through a beach-access boardwalk.'],
+    ['Hook Pond Dogleg', 'Cross the causeway and turn up by Hook Pond.'],
+    ['Library Loop', 'Find the tucked-away path inside a village loop.'],
+    ['Farm Lane Detours', 'Ignore tempting side lanes and keep the route smart.'],
+    ['Springs Preserve Trail', 'Use conditionals around preserve paths.'],
+    ['Beach Parking Maze', 'Navigate side streets with wall-following logic.'],
+    ['Montauk Lighthouse Challenge', 'Finish the dense trail network by the lighthouse.'],
+  ];
+  const mission = missions[ij.level - 1] || missions[0];
   return `
 ${BlocklyGames.html.headerBar(ij, BlocklyGames.getMsg('Games.maze', true),
     BlocklyInterface.nextLevelParam, true, false,
     '<button id="pegmanButton"><img src="common/1x1.gif"><span id="pegmanButtonArrow"></span></button>')}
 
 <div id="missionCard">
-  <strong>Mission ${ij.level}: Village Path</strong>
-  <span>Use Blockly commands to travel from East Hampton Village toward the beach. Sand dunes and ponds are walls; open paths are safe routes.</span>
+  <strong>Mission ${ij.level}: ${mission[0]}</strong>
+  <span>${mission[1]} Sand dunes and ponds are walls; open paths are safe routes.</span>
 </div>
 
 <div id="visualization">

@@ -97,135 +97,97 @@ const SquareType = {
 // The maze square constants defined above are inlined here
 // for ease of reading and writing the static mazes.
 const map = [
-// Level 1.
+// Level 1: Main Street warm-up — two storefront blocks east.
  [[0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 2, 1, 3, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0],
+  [0, 1, 2, 1, 3, 1, 0],
+  [0, 0, 0, 1, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0]],
-// Level 2.
+// Level 2: Village green corner — east, then north by the green.
  [[0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 1, 1, 0, 0, 0],
   [0, 0, 0, 1, 3, 0, 0, 0],
   [0, 0, 2, 1, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 1, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 3.
+// Level 3: Long Wharf walk — a longer straight route for repeat.
  [[0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 2, 1, 1, 1, 1, 3, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
+  [1, 2, 1, 1, 1, 1, 3, 1],
+  [0, 0, 0, 0, 1, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 4.
-/**
- * Note, the path continues past the start and the goal in both directions.
- * This is intentionally done so users see the maze is about getting from
- * the start to the goal and not necessarily about moving over every part of
- * the maze, 'mowing the lawn' as Neil calls it.
- */
+// Level 4: Dune boardwalk bend — diagonal-ish beach access path.
  [[0, 0, 0, 0, 0, 0, 0, 1],
   [0, 0, 0, 0, 0, 0, 1, 1],
   [0, 0, 0, 0, 0, 3, 1, 0],
   [0, 0, 0, 0, 1, 1, 0, 0],
-  [0, 0, 0, 1, 1, 0, 0, 0],
-  [0, 0, 1, 1, 0, 0, 0, 0],
-  [0, 2, 1, 0, 0, 0, 0, 0],
+  [0, 0, 1, 1, 1, 0, 0, 0],
+  [0, 0, 1, 0, 0, 0, 0, 0],
+  [0, 2, 1, 1, 0, 0, 0, 0],
   [1, 1, 0, 0, 0, 0, 0, 0]],
-// Level 5.
+// Level 5: Hook Pond dogleg — turn up after crossing the causeway.
  [[0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 3, 0, 0],
+  [0, 0, 0, 0, 1, 3, 1, 0],
+  [0, 0, 0, 0, 1, 0, 0, 0],
+  [0, 0, 0, 0, 1, 0, 0, 0],
+  [0, 0, 0, 0, 1, 1, 0, 0],
   [0, 0, 0, 0, 0, 1, 0, 0],
-  [0, 0, 0, 0, 0, 1, 0, 0],
-  [0, 0, 0, 0, 0, 1, 0, 0],
-  [0, 0, 0, 0, 0, 1, 0, 0],
-  [0, 0, 0, 2, 1, 1, 0, 0],
+  [0, 0, 2, 1, 1, 1, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 6.
+// Level 6: Library loop — a small loop with the goal tucked inside.
  [[0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 1, 1, 1, 1, 1, 0, 0],
-  [0, 1, 0, 0, 0, 1, 0, 0],
-  [0, 1, 1, 3, 0, 1, 0, 0],
-  [0, 0, 0, 0, 0, 1, 0, 0],
-  [0, 2, 1, 1, 1, 1, 0, 0],
+  [0, 1, 1, 1, 1, 1, 1, 0],
+  [0, 1, 0, 0, 0, 0, 1, 0],
+  [0, 1, 1, 3, 1, 0, 1, 0],
+  [0, 0, 0, 0, 1, 0, 1, 0],
+  [0, 2, 1, 1, 1, 1, 1, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 7.
+// Level 7: Farm lane detours — choose the useful lane, skip the farm spurs.
  [[0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 1, 1, 0],
   [0, 2, 1, 1, 1, 1, 0, 0],
-  [0, 0, 0, 0, 0, 1, 1, 0],
+  [0, 0, 1, 0, 0, 1, 1, 0],
   [0, 1, 1, 3, 0, 1, 0, 0],
   [0, 1, 0, 1, 0, 1, 0, 0],
   [0, 1, 1, 1, 1, 1, 1, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 8.
+// Level 8: Springs trail — loops around preserve paths toward the nest sign.
  [[0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 1, 1, 1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1, 1, 0, 0],
-  [0, 1, 1, 1, 0, 1, 0, 0],
-  [0, 0, 0, 1, 0, 1, 0, 0],
-  [0, 2, 1, 1, 0, 3, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 9.
- [[0, 0, 0, 0, 0, 0, 0, 0],
   [0, 1, 1, 1, 1, 1, 0, 0],
-  [0, 0, 1, 0, 0, 0, 0, 0],
+  [0, 1, 0, 0, 0, 1, 1, 0],
+  [0, 1, 1, 1, 0, 0, 1, 0],
+  [0, 0, 0, 1, 1, 1, 1, 0],
+  [0, 2, 1, 1, 0, 3, 1, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0]],
+// Level 9: Beach parking maze — side streets and a left-wall strategy.
+ [[0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 1, 1, 1, 1, 1, 1, 0],
+  [0, 0, 1, 0, 0, 0, 1, 0],
   [3, 1, 1, 1, 1, 1, 1, 0],
   [0, 1, 0, 1, 0, 1, 1, 0],
   [1, 1, 1, 1, 1, 0, 1, 0],
   [0, 1, 0, 1, 0, 2, 1, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
-// Level 10.
+// Level 10: Montauk lighthouse challenge — a denser preserve network.
  [[0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 1, 1, 0, 3, 0, 1, 0],
-  [0, 1, 1, 0, 1, 1, 1, 0],
-  [0, 1, 0, 1, 0, 1, 0, 0],
+  [0, 1, 1, 0, 3, 1, 1, 0],
+  [0, 1, 0, 0, 1, 0, 1, 0],
   [0, 1, 1, 1, 1, 1, 1, 0],
-  [0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 2, 1, 1, 1, 0, 1, 0],
+  [0, 0, 0, 1, 0, 1, 0, 0],
+  [0, 1, 1, 1, 1, 1, 1, 0],
+  [0, 2, 1, 0, 1, 0, 1, 0],
   [0, 0, 0, 0, 0, 0, 0, 0]],
 ][BlocklyGames.LEVEL - 1];
 
-// East Hampton remix pass: add small beach-path side trails to each
-// original route so Village Path does not play exactly like stock Maze.
-// The main solution corridor stays intact; extra open tiles read as local
-// side streets, dune cut-throughs, and pond edges.
-(function remixVillagePathMap() {
-  const candidates = [];
-  for (let y = 1; y < map.length - 1; y++) {
-    for (let x = 1; x < map[y].length - 1; x++) {
-      if (map[y][x] !== SquareType.WALL) {
-        continue;
-      }
-      let openNeighbours = 0;
-      for (const delta of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
-        const value = map[y + delta[1]][x + delta[0]];
-        if (value === SquareType.OPEN || value === SquareType.START ||
-            value === SquareType.FINISH) {
-          openNeighbours++;
-        }
-      }
-      if (openNeighbours === 1) {
-        candidates.push([x, y]);
-      }
-    }
-  }
-  const level = BlocklyGames.LEVEL;
-  const branchCount = Math.min(2, candidates.length);
-  for (let i = 0; i < branchCount; i++) {
-    const index = (level * 7 + i * 3) % candidates.length;
-    const branch = candidates[index];
-    map[branch[1]][branch[0]] = SquareType.OPEN;
-  }
-})();
 
 /**
  * Measure maze dimensions and set sizes.

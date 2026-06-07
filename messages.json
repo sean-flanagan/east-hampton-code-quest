@@ -177,23 +177,23 @@
   },
   "Puzzle.animal1": {
     "desc": "Duck: The bird.\n{{Identical|Duck}}",
-    "msg": "Duck"
+    "msg": "Hook Pond Duck"
   },
   "Puzzle.animal1Trait1": {
     "desc": "Feathers: A trait that ducks have.\n{{Identical|Feather}}",
-    "msg": "Feathers"
+    "msg": "waterproof feathers"
   },
   "Puzzle.animal1Trait2": {
     "desc": "Beak: A trait that ducks have.\n{{Identical|Beak}}",
-    "msg": "Beak"
+    "msg": "pond beak"
   },
   "Puzzle.animal1HelpUrl": {
     "desc": "The URL of a page with basic information about '''ducks''', on the most appropriate linguistic edition of Wikipedia for the target language.\nMake sure you use secure HTTPS links, to avoid generating mixed contents and security alerts in browsers when viewing the current page in a secure HTTPS session. If not using Wikipedia, make sure the target is non intrusive, but if in doubt, link to a page in another suitable language supported by a Wikimedia project.",
-    "msg": "https://en.wikipedia.org/wiki/Duck"
+    "msg": "https://en.wikipedia.org/wiki/Hook_Pond"
   },
   "Puzzle.animal2": {
     "desc": "Cat: The animal.",
-    "msg": "Cat"
+    "msg": "Bookstore Cat"
   },
   "Puzzle.animal2Trait1": {
     "desc": "Whiskers: A trait that cats have.\n{{Identical|Whisker}}",
@@ -201,7 +201,7 @@
   },
   "Puzzle.animal2Trait2": {
     "desc": "Fur: A trait that cats have.\n{{Identical|Fur}}",
-    "msg": "Fur"
+    "msg": "quiet paws"
   },
   "Puzzle.animal2HelpUrl": {
     "desc": "The URL of a page with basic information about '''cats''', on the most appropriate linguistic edition of Wikipedia for the target language.\nMake sure you use secure HTTPS links, to avoid generating mixed contents and security alerts in browsers when viewing the current page in a secure HTTPS session. If not using Wikipedia, make sure the target is non intrusive, but if in doubt, link to a page in another suitable language supported by a Wikimedia project.",
@@ -209,15 +209,15 @@
   },
   "Puzzle.animal3": {
     "desc": "Bee: The insect.",
-    "msg": "Bee"
+    "msg": "Dune Bee"
   },
   "Puzzle.animal3Trait1": {
     "desc": "Honey: A trait that bees have.\n{{Identical|Honey}}",
-    "msg": "Honey"
+    "msg": "pollinates beach flowers"
   },
   "Puzzle.animal3Trait2": {
     "desc": "Stinger: A trait that bees have.\n{{Identical|Stinger}}",
-    "msg": "Stinger"
+    "msg": "striped body"
   },
   "Puzzle.animal3HelpUrl": {
     "desc": "The URL of a page with basic information about '''bees''', on the most appropriate linguistic edition of Wikipedia for the target language.\nMake sure you use secure HTTPS links, to avoid generating mixed contents and security alerts in browsers when viewing the current page in a secure HTTPS session. If not using Wikipedia, make sure the target is non intrusive, but if in doubt, link to a page in another suitable language supported by a Wikimedia project.",
@@ -225,19 +225,19 @@
   },
   "Puzzle.animal4": {
     "desc": "Snail: The animal.\n{{Identical|Snail}}",
-    "msg": "Snail"
+    "msg": "Tidepool Snail"
   },
   "Puzzle.animal4Trait1": {
     "desc": "Shell: A trait that snails have.\n{{Identical|Shell}}",
-    "msg": "Shell"
+    "msg": "spiral shell"
   },
   "Puzzle.animal4Trait2": {
     "desc": "Slime: A trait that snails have.\n{{Identical|Slime}}",
-    "msg": "Slime"
+    "msg": "leaves a silver trail"
   },
   "Puzzle.animal4HelpUrl": {
     "desc": "The URL of a page with basic information about '''snails''', on the most appropriate linguistic edition of Wikipedia for the target language.\nMake sure you use secure HTTPS links, to avoid generating mixed contents and security alerts in browsers when viewing the current page in a secure HTTPS session. If not using Wikipedia, make sure the target is non intrusive, but if in doubt, link to a page in another suitable language supported by a Wikimedia project.",
-    "msg": "https://en.wikipedia.org/wiki/Snail"
+    "msg": "https://en.wikipedia.org/wiki/Sea_snail"
   },
   "Puzzle.picture": {
     "desc": "Prompt for a picture of an animal.\n{{Identical|Picture}}",
@@ -245,7 +245,7 @@
   },
   "Puzzle.legs": {
     "desc": "Prompt for the number of legs that an animal has.\n{{Identical|Leg}}",
-    "msg": "legs:"
+    "msg": "legs or feet:"
   },
   "Puzzle.legsChoose": {
     "desc": "Initial text displayed in a dropdown menu from which the user should choose an option.\n{{Identical|Choose}}",
@@ -253,7 +253,7 @@
   },
   "Puzzle.traits": {
     "desc": "Prompt for a couple of traits of an animal (e.g. Duck: feathers, beak).\n{{Identical|Trait}}",
-    "msg": "traits:"
+    "msg": "local clues:"
   },
   "Puzzle.error0": {
     "desc": "A congratulatory message displayed if the user placed all of the blocks correctly.\n\nParameters:\n* %1 - number of blocks correctly placed.  It is always an integer greater than 1.\n\nThe use of a new line character is optional.",
@@ -277,7 +277,7 @@
   },
   "Puzzle.helpText": {
     "desc": "Instructions for the puzzle.  For context, see [https://blockly.games/puzzle Blockly Puzzle].",
-    "msg": "For each animal (green), attach its picture, choose its number of legs, and make a stack of its traits."
+    "msg": "For each East Hampton clue card (green), attach its picture, choose its number of legs, and stack the matching local traits."
   },
   "Maze.moveForward": {
     "desc": "block text - Imperative or infinitive of a verb for a person moving (walking) in the direction he/she is facing.",
@@ -397,7 +397,7 @@
   },
   "Maze.helpWallFollow": {
     "desc": "callout - This advises the user to solve a maze by keeping his/her left hand in contact with the wall while proceeding through it.  The final sentence is a warning that only advanced programmers should attempt this problem, as beginners tend to get frustrated.",
-    "msg": "Can you solve this complicated maze? Try following the left-hand wall. Advanced programmers only!"
+    "msg": "Can you solve this Montauk lighthouse trail? Try following the left-hand wall. Advanced coders only!"
   },
   "Bird.noWorm": {
     "desc": "block text - Bird is not in possession of a worm.  This phrase is prefixed with 'if'.",
@@ -421,15 +421,15 @@
   },
   "Bird.helpHeading": {
     "desc": "callout - This is shown as instruction for the first level.",
-    "msg": "Change the heading angle to make the bird get the worm and land in her nest."
+    "msg": "Change the heading angle to help the dune bird collect food and return to the protected nest."
   },
   "Bird.helpHasWorm": {
     "desc": "callout - This is shown when the 'does not have worm' block is introduced.",
-    "msg": "Use this block to go in one heading if you have the worm, or a different heading if you don't have the worm."
+    "msg": "Use this block to fly one route before the bird has food, and another route after it has food."
   },
   "Bird.helpX": {
     "desc": "callout - This is shown when the 'x smaller than 50' block is introduced.",
-    "msg": "'x' is your current horizontal position. Use this block to go in one heading if 'x' is less than a number, or a different heading otherwise."
+    "msg": "'x' is your east-west position over the beach map. Use it to decide which way to bank around the dunes."
   },
   "Bird.helpElse": {
     "desc": "callout - This is shown when the user first needs to modify an 'if' block.",
@@ -441,7 +441,7 @@
   },
   "Bird.helpAnd": {
     "desc": "callout - This is shown to introduce the user to the logical 'and' block.\n\nMake sure to translate consistently with:\n* {{msg-blockly|LOGIC OPERATION AND}}",
-    "msg": "The 'and' block is true only if both its inputs are true."
+    "msg": "The 'and' block is true only if both beach-map clues are true."
   },
   "Bird.helpMutator": {
     "desc": "callout - This is shown to demonstrate how to drag a block.\n\nTranslate consistently with:\n* {{msg-blockly|CONTROLS IF MSG ELSE}}\n* {{msg-blockly|CONTROLS IF MSG IF}}",
