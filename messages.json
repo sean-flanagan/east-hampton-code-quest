@@ -51,17 +51,17 @@
     "desc": "alert - This is displayed when the user solves the most difficult level and is going to go to the next game.",
     "msg": "Are you ready for the next challenge?"
   },
- "Games.submitTitle": {
+  "Games.submitTitle": {
     "desc": "Label in front of a field where the user is requested to type a title for their work.\n{{Identical|Title}}",
-     "msg": "Title:"
+    "msg": "Title:"
   },
   "Games.linkTooltip": {
     "desc": "tooltip - Pressing this button will cause the current program to be saved and for a URL to be shown to later retrieve it.",
     "msg": "Save and link to blocks."
   },
- "Games.runTooltip": {
+  "Games.runTooltip": {
     "desc": "tooltip - Pressing this button runs the computer program the user has written.",
-     "msg": "Run the program you wrote."
+    "msg": "Run the program you wrote."
   },
   "Games.runProgram": {
     "desc": "button label - Pressing this button runs the computer program the user has written.",
@@ -177,75 +177,75 @@
   },
   "Puzzle.animal1": {
     "desc": "Duck: The bird.\n{{Identical|Duck}}",
-    "msg": "Hook Pond Duck"
+    "msg": "Piping Plover Patrol"
   },
   "Puzzle.animal1Trait1": {
     "desc": "Feathers: A trait that ducks have.\n{{Identical|Feather}}",
-    "msg": "waterproof feathers"
+    "msg": "two quick beach feet"
   },
   "Puzzle.animal1Trait2": {
     "desc": "Beak: A trait that ducks have.\n{{Identical|Beak}}",
-    "msg": "pond beak"
+    "msg": "nests above the tide line"
   },
   "Puzzle.animal1HelpUrl": {
     "desc": "The URL of a page with basic information about '''ducks''', on the most appropriate linguistic edition of Wikipedia for the target language.\nMake sure you use secure HTTPS links, to avoid generating mixed contents and security alerts in browsers when viewing the current page in a secure HTTPS session. If not using Wikipedia, make sure the target is non intrusive, but if in doubt, link to a page in another suitable language supported by a Wikimedia project.",
-    "msg": "https://en.wikipedia.org/wiki/Hook_Pond"
+    "msg": "https://en.wikipedia.org/wiki/Piping_plover"
   },
   "Puzzle.animal2": {
     "desc": "Cat: The animal.",
-    "msg": "Bookstore Cat"
+    "msg": "Harbor Seal Lookout"
   },
   "Puzzle.animal2Trait1": {
     "desc": "Whiskers: A trait that cats have.\n{{Identical|Whisker}}",
-    "msg": "Whiskers"
+    "msg": "four flippers"
   },
   "Puzzle.animal2Trait2": {
     "desc": "Fur: A trait that cats have.\n{{Identical|Fur}}",
-    "msg": "quiet paws"
+    "msg": "rests near the inlet"
   },
   "Puzzle.animal2HelpUrl": {
     "desc": "The URL of a page with basic information about '''cats''', on the most appropriate linguistic edition of Wikipedia for the target language.\nMake sure you use secure HTTPS links, to avoid generating mixed contents and security alerts in browsers when viewing the current page in a secure HTTPS session. If not using Wikipedia, make sure the target is non intrusive, but if in doubt, link to a page in another suitable language supported by a Wikimedia project.",
-    "msg": "https://en.wikipedia.org/wiki/Cat"
+    "msg": "https://en.wikipedia.org/wiki/Harbor_seal"
   },
   "Puzzle.animal3": {
     "desc": "Bee: The insect.",
-    "msg": "Dune Bee"
+    "msg": "Horseshoe Crab Scout"
   },
   "Puzzle.animal3Trait1": {
     "desc": "Honey: A trait that bees have.\n{{Identical|Honey}}",
-    "msg": "pollinates beach flowers"
+    "msg": "ten walking legs"
   },
   "Puzzle.animal3Trait2": {
     "desc": "Stinger: A trait that bees have.\n{{Identical|Stinger}}",
-    "msg": "striped body"
+    "msg": "ancient bay shell"
   },
   "Puzzle.animal3HelpUrl": {
     "desc": "The URL of a page with basic information about '''bees''', on the most appropriate linguistic edition of Wikipedia for the target language.\nMake sure you use secure HTTPS links, to avoid generating mixed contents and security alerts in browsers when viewing the current page in a secure HTTPS session. If not using Wikipedia, make sure the target is non intrusive, but if in doubt, link to a page in another suitable language supported by a Wikimedia project.",
-    "msg": "https://en.wikipedia.org/wiki/Bee"
+    "msg": "https://en.wikipedia.org/wiki/Horseshoe_crab"
   },
   "Puzzle.animal4": {
     "desc": "Snail: The animal.\n{{Identical|Snail}}",
-    "msg": "Tidepool Snail"
+    "msg": "Bay Scallop Keeper"
   },
   "Puzzle.animal4Trait1": {
     "desc": "Shell: A trait that snails have.\n{{Identical|Shell}}",
-    "msg": "spiral shell"
+    "msg": "zero feet"
   },
   "Puzzle.animal4Trait2": {
     "desc": "Slime: A trait that snails have.\n{{Identical|Slime}}",
-    "msg": "leaves a silver trail"
+    "msg": "fan-shaped shell"
   },
   "Puzzle.animal4HelpUrl": {
     "desc": "The URL of a page with basic information about '''snails''', on the most appropriate linguistic edition of Wikipedia for the target language.\nMake sure you use secure HTTPS links, to avoid generating mixed contents and security alerts in browsers when viewing the current page in a secure HTTPS session. If not using Wikipedia, make sure the target is non intrusive, but if in doubt, link to a page in another suitable language supported by a Wikimedia project.",
-    "msg": "https://en.wikipedia.org/wiki/Sea_snail"
+    "msg": "https://en.wikipedia.org/wiki/Bay_scallop"
   },
   "Puzzle.picture": {
     "desc": "Prompt for a picture of an animal.\n{{Identical|Picture}}",
-    "msg": "picture:"
+    "msg": "harbor picture:"
   },
   "Puzzle.legs": {
     "desc": "Prompt for the number of legs that an animal has.\n{{Identical|Leg}}",
-    "msg": "legs or feet:"
+    "msg": "feet / flippers:"
   },
   "Puzzle.legsChoose": {
     "desc": "Initial text displayed in a dropdown menu from which the user should choose an option.\n{{Identical|Choose}}",
@@ -253,7 +253,7 @@
   },
   "Puzzle.traits": {
     "desc": "Prompt for a couple of traits of an animal (e.g. Duck: feathers, beak).\n{{Identical|Trait}}",
-    "msg": "local clues:"
+    "msg": "harbor clues:"
   },
   "Puzzle.error0": {
     "desc": "A congratulatory message displayed if the user placed all of the blocks correctly.\n\nParameters:\n* %1 - number of blocks correctly placed.  It is always an integer greater than 1.\n\nThe use of a new line character is optional.",
@@ -277,7 +277,7 @@
   },
   "Puzzle.helpText": {
     "desc": "Instructions for the puzzle.  For context, see [https://blockly.games/puzzle Blockly Puzzle].",
-    "msg": "For each East Hampton clue card (green), attach its picture, choose its number of legs, and stack the matching local traits."
+    "msg": "East Hampton Harbor Puzzle: snap each local creature to its picture, choose its feet/flipper count, and tuck the right harbor clues inside."
   },
   "Maze.moveForward": {
     "desc": "block text - Imperative or infinitive of a verb for a person moving (walking) in the direction he/she is facing.",
@@ -683,9 +683,9 @@
     "desc": "Command to draw a circle.",
     "msg": "circle"
   },
- "Movie.rectTooltip": {
+  "Movie.rectTooltip": {
     "desc": "tooltip",
-     "msg": "Draws a rectangle at the specified location and with the specified width and height."
+    "msg": "Draws a rectangle at the specified location and with the specified width and height."
   },
   "Movie.rectDraw": {
     "desc": "Command to draw a rectangle.\n{{Identical|Rectangle}}",

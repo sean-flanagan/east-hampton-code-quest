@@ -23,7 +23,7 @@ Puzzle.data.getData = function() {
   return [
     {
       name: BlocklyGames.getMsg('Puzzle.animal1', false),
-      pic: 'duck.jpg',
+      pic: 'piping-plover.svg',
       picHeight: 70,
       picWidth: 100,
       legs: 2,
@@ -35,7 +35,7 @@ Puzzle.data.getData = function() {
     },
     {
       name: BlocklyGames.getMsg('Puzzle.animal2', false),
-      pic: 'cat.jpg',
+      pic: 'harbor-seal.svg',
       picHeight: 70,
       picWidth: 100,
       legs: 4,
@@ -47,10 +47,10 @@ Puzzle.data.getData = function() {
     },
     {
       name: BlocklyGames.getMsg('Puzzle.animal3', false),
-      pic: 'bee.jpg',
+      pic: 'horseshoe-crab.svg',
       picHeight: 70,
       picWidth: 100,
-      legs: 6,
+      legs: 10,
       traits: [
         BlocklyGames.getMsg('Puzzle.animal3Trait1', false),
         BlocklyGames.getMsg('Puzzle.animal3Trait2', false)
@@ -59,7 +59,7 @@ Puzzle.data.getData = function() {
     },
     {
       name: BlocklyGames.getMsg('Puzzle.animal4', false),
-      pic: 'snail.jpg',
+      pic: 'bay-scallop.svg',
       picHeight: 70,
       picWidth: 100,
       legs: 0,
